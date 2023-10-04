@@ -1,4 +1,4 @@
-import 'package:blog_explorer/Features/home/presentation/view/home_view.dart';
+import 'package:blog_explorer/core/utils/app_routers.dart';
 import 'package:flutter/material.dart';
 
 void main() {
@@ -11,10 +11,10 @@ class MyApp extends StatelessWidget {
   // This widget is the root of your application.
   @override
   Widget build(BuildContext context) {
-    return MaterialApp(
+    return MaterialApp.router(
+      routerConfig: AppRouter.router,
       debugShowCheckedModeBanner: false,
       theme: ThemeData.dark(),
-      home: const HomeView(),
     );
   }
 }

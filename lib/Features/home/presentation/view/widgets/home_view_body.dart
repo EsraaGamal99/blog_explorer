@@ -11,11 +11,7 @@ class HomeViewBody extends StatelessWidget {
       child: Column(
         children: [
           CustomAppBar(),
-          Column(
-            children: [
-              BlogListView(),
-            ],
-          ),
+          BlogListView(),
         ],
       ),
     );
